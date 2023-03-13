@@ -4,7 +4,13 @@
 // Note: You have to use the arguments object.
 
 function destroyer(arr) {
-  return arr;
+  let args = Array.from(arguments).slice(1);
+
+  // filter
+
+  return arr.filter(function(item) {
+    return !args.includes(item);
+  });
 }
 
 destroyer([1, 2, 3, 1, 2, 3], 2, 3);
