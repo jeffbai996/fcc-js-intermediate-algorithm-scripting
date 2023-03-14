@@ -8,7 +8,27 @@
 // The character and its pair are paired up in an array, and all the arrays are grouped into one encapsulating array.
 
 function pairElement(str) {
-  return str;
+  // store result
+  let result = [];
+  for (let i = 0; i < str.length; i++) {
+    switch (str[i]) {
+      case "A":
+        result.push(["A", "T"]);
+        break;
+      case "T":
+        result.push(["T", "A"]);
+        break;
+      case "C":
+        result.push(["C", "G"]);
+        break;
+      case "G":
+        result.push(["G", "C"]);
+        break;
+      default:
+        console.log("Invalid input");
+    }
+  }
+  return result;
 }
 
 pairElement("GCG");
