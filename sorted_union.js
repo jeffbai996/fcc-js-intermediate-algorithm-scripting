@@ -8,12 +8,12 @@
 // Check the assertion tests for examples.
 
 function uniteUnique(...arrs) {
-  //declare array to store result
+  // declare array to store result
   const result = [];
   // loop through first level arr
   for (let i = 0; i < arrs.length; i++) {
     // loop through second level arr
-    for (let j = 0; j < arrs[i].length; i++) {
+    for (let j = 0; j < arrs[i].length; j++) {
       const val = arrs[i][j];
       // check if result does not include 'val'
       if (!result.includes(val)) {
