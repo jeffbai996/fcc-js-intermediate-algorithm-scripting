@@ -8,6 +8,12 @@ function convertHTML(str) {
   str = str.replace(/</g, '&lt;');
   // replace all '>' with '&gt;'
   str = str.replace(/>/g, '&gt;');
+  // replace all '"' with '&quot;'
+  str = str.replace(/"/g, '&quot;');
+  // replace all "'" with '&apos;'
+  str = str.replace(/'/g, '&apos;');
+
+  // return modified string
   return str;
 }
 
