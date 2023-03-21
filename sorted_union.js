@@ -7,7 +7,13 @@
 
 // Check the assertion tests for examples.
 
-function uniteUnique(arr) {
+function uniteUnique(...arrs) {
+  //declare array to store result
+  const result = [];
+  // loop through first level arr
+  for (let i = 0; i < arrs.length; i++) {
+    
+  }
   return arr;
 }
 
