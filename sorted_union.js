@@ -12,9 +12,16 @@ function uniteUnique(...arrs) {
   const result = [];
   // loop through first level arr
   for (let i = 0; i < arrs.length; i++) {
-    
+    // loop through second level arr
+    for (let j = 0; j < arrs[i].length; i++) {
+      const val = arrs[i][j];
+      // check if result does not include 'val'
+      if (!result.includes(val)) {
+        result.push(val);
+      }
+    }
   }
-  return arr;
+  return result;
 }
 
 uniteUnique([1, 3, 2], [5, 2, 1, 4], [2, 1]);
