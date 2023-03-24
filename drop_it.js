@@ -4,6 +4,9 @@
 // Then return the rest of the array once the condition is satisfied, otherwise, arr should be returned as an empty array.
 
 function dropElements(arr, func) {
+  while (arr.length > 0 && !func(arr[0])) {
+    arr.shift();
+  }
   return arr;
 }
 
