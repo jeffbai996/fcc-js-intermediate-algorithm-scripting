@@ -12,7 +12,10 @@
 const Person = function(firstAndLast) {
   // Only change code below this line
   // Complete the method below and implement the others similarly
-  this.getFullName = function() {
+  let fullName = firstAndLast;
+  this.getFullName = function() { 
+    return fullName;
+  };
     return "";
   };
   return firstAndLast;
